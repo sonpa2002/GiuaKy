@@ -1,0 +1,169 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+    <title>Trang chủ</title>
+    <style>
+        /* CSS chung */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* CSS cho header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+            .menu ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .menu li {
+                display: inline-block;
+                margin-right: 20px;
+            }
+
+                .menu li a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: bold;
+                }
+
+        /* CSS cho danh sách sản phẩm */
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .product-item {
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+            .product-item img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+
+            .product-item h3 {
+                margin: 0;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .product-item p {
+                margin: 10px 0;
+            }
+
+        /* CSS cho footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Danh sách sản phẩm</a></li>
+                    <li><a href="#">Chi tiết sản phẩm</a></li>
+                    <li><a href="/home/gioithieu">Giới thiệu</a></li>
+                    <li><a href="#">Phản hồi</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Sản phẩm bán chạy</h1>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="~/css/ankieng1.jpg" alt="Sản phẩm 1">
+                <h3>Sản phẩm 1</h3>
+                <p>Mô tả sản phẩm 1</p>
+            </div>
+            <div class="product-item">
+                <img src="~/css/ankieng3.jpg" alt="Sản phẩm 2">
+                <h3>Sản phẩm 2</h3>
+                <p>Mô tả sản phẩm 2</p>
+            </div>
+            <div class="product-item">
+                <img src="~/css/giamcan1.jpg" alt="Sản phẩm 3">
+                <h3>Sản phẩm 3</h3>
+                <p>Mô tả sản phẩm 3</p>
+            </div>
+        </div>
+
+        <h1>Sản phẩm mới nhất</h1>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="~/css/giamcan5.jpg" alt="Sản phẩm 4">
+                <h3>Sản phẩm 4</h3>
+                <p>Mô tả sản phẩm 4</p>
+            </div>
+            <div class="product-item">
+                <img src="~/css/giamcan4.jpg" alt="Sản phẩm 5">
+                <h3>Sản phẩm 5</h3>
+                <p>Mô tả sản phẩm 5</p>
+            </div>
+            <div class="product-item">
+                <img src="~/css/ankieng2.jpg" alt="Sản phẩm 6">
+                <h3>Sản phẩm 6</h3>
+                <p>Mô tả sản phẩm 6</p>
+            </div>
+        </div>
+
+        <h1>Sản phẩm khuyến mãi</h1>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="~/css/giamcan2.jpg" alt="Sản phẩm 7">
+                <h3>Sản phẩm 7</h3>
+                <p>Mô tả sản phẩm 7</p>
+            </div>
+            <div class="product-item">
+                <img src="~/css/tangcan3.jpg" alt="Sản phẩm 8">
+                <h3>Sản phẩm 8</h3>
+                <p>Mô tả sản phẩm 8</p>
+            </div>
+            <div class="product-item">
+                <img src="~/css/tangcan1.jpg" alt="Sản phẩm 9">
+                <h3>Sản phẩm 9</h3>
+                <p>Mô tả sản phẩm 9</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Bản quyền &copy; 2023. Tất cả các quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
